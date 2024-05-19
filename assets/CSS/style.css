@@ -187,7 +187,7 @@ padding: 36px 0 8px;
     padding-top: 56px;
     padding-bottom: 65px;
     background-color: #fffcf4;
-    width: 100%;
+    width: auto;
 }
 .hero .body{
     display: flex;
@@ -452,7 +452,7 @@ height: 466px;
     margin-top: 200px;
     background: #2E2100;
     height: 380px;
-    width: 100%;
+    width: auto;
     
 }
 
@@ -576,7 +576,7 @@ height: 466px;
 /* =====================================================================BLOG=============================================*/
 .blog{
     background: #FFFCF4;
-    width: 100%;
+    width: auto;
 }
 .blog .blog-header{
     width: 38.2%;
@@ -656,8 +656,9 @@ height: 466px;
 /* =====================================================================FOOTER=============================================*/
 /* =====================================================================FOOTER=============================================*/
 .footer{
+    width: 1170px;
     background-color: #2E2100;
-
+    width: auto;
 }
 .footer .in-footer{
     padding: 96px 0px 28px;
