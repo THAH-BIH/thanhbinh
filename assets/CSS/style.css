@@ -1,0 +1,710 @@
+
+* {
+  /* bài 47 */
+    box-sizing: border-box;
+}
+
+html {
+    /* đổi thành 1 rem bằng 10px */
+    font-size: 62.5%;
+}
+
+/* font family */
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+}
+
+/* =============================================COMMON======================================================== */
+/* =============================================COMMON======================================================== */
+/* xoa gach chan */
+a{
+    text-decoration: none;
+}
+.document{
+    word-break: break-all;  /* khong vo dao dien khi nhap vb dai khong khoang trang */
+    color: #5f5b53;
+    font-size: 1.8rem;
+    line-height: 1.67;
+}
+.document-2{
+    color: #5F5B53;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px; /* 175% */
+}
+.document-3{
+    color: #5F5B53;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 185.714% */
+}
+.heading-h2{
+color: #171100;
+font-family: Sen;
+font-size: 38px;
+font-weight: 700;
+line-height: 1.26; /* 126.316% */
+letter-spacing: -0.76px;
+}
+.heading-h3{
+color: #171100;
+font-family: Sen;
+font-size: 1.8rem;
+font-weight: 600;
+line-height: 1.67; /* 166.667% */
+}
+.heading-h4{
+    color: #171100;
+    font-weight: 600;
+    line-height: 28px; /* 175% */
+}
+.main_content{
+    width: 1170px;
+    max-width: calc(100% -48px);/* khi thu nho trinh duyet van cach le 48px*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* nut bam */
+.btn{
+    background-color: #171100;
+    display: inline-block;
+    padding: 0px 0px;
+    color: #fff;
+    text-align: center;
+    border-radius: 999px;
+    line-height: 50px;
+    width: 137px;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.btn-2{
+    background-color: #171100;
+    display: inline-block;
+    padding: 0px 0px;
+    color: #fff;
+    text-align: center;
+    font-size: 1.4rem;
+    border-radius: 999px;
+    line-height: 50px;
+    min-width: 118px;
+    font-weight: 600;
+}
+.btn.btn-hover:hover{
+    background-color: #ffb900;
+    border: 1px solid #ffb900 ;
+    padding: 1px;
+}
+.btn-2.btn-hover:hover{
+    background-color: #ffb900;
+    border: 1px solid #ffb900 ;
+    padding: 1px;
+}
+/* lam mo khi di chuot vo */
+.btn:hover{
+    opacity: 0.8;
+}
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 1 );
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 2 );
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.line-clamp-4 {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 4 );
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* ================================================HEADER================================================== */
+/* ================================================HEADER================================================== */
+/* ================================================HEADER================================================== */
+.header.fixed{
+    z-index: 1;
+    background-color: #fffcf4;
+    position: sticky;/* tao thanh tren khi cuon xuong */
+    top: -28px;
+}
+
+.header .body{
+display: flex;
+align-items:center;
+padding: 36px 0 8px;
+}
+/* flex the li cha no la ul nen tac dong vao the ul */
+.nav ul{
+    display: flex;
+}
+/* can trai khoi nav */
+.nav{
+    margin-left: auto;
+}
+
+.nav a{
+    position: relative; /* bai 87.2 */
+    color: #5f5b53;
+    font-style: normal;
+    padding: 8px 21px;
+}
+/* hieu ung sau khi dua chuot vao */
+.nav li.active a,
+.nav a:hover{
+    color: #171100;
+    text-shadow: 1px 0 0 currentColor;
+}
+/* tao gach chan */
+.nav li.active a::after{
+    content: "";
+    width: 12px;
+    height: 2px;
+    position: absolute;
+    left: 21px;
+    bottom: 6px;
+    border-radius: 1px;
+    background-color: #171100;
+    display: block;
+}
+/* tao khoang cach sign up */
+.header .action{
+    margin-left: 49px;
+}
+.btn_sign_up{
+    width: 144px;
+}
+/* ==============================================HERO======================================================== */
+
+.hero{
+    padding-top: 56px;
+    padding-bottom: 65px;
+    background-color: #fffcf4;
+
+}
+.hero .body{
+    display: flex;
+}
+/* ==============================================HERO LEFT================================================== */
+.hero .media_block{
+    width: 48%;/* lay chieu rong cua box chia 1170 cua tong */
+    position: relative;
+
+}
+.hero .media_block .img{
+    width: 470px;
+    height: 685px;
+    object-fit: cover;
+    border-radius: 20px;
+    
+    
+}
+
+
+.hero .box-in-hero{
+    width: 270px;
+    position: absolute;
+    bottom: 48px;
+    right: 0px;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
+    padding: 24px;
+}
+.box-in-hero .item{
+    display: flex;
+    align-items: center;
+}
+.box-in-hero .item + .item{
+    margin-top: 22px;
+
+}
+.box-in-hero .icon{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #fff9e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-in-hero .icon-2{
+    background-color: #fcefff;
+}
+.box-in-hero .icon-3{
+    background-color: #ebeaff;
+}
+.box-in-hero .document{
+    margin-left: 16px;
+}
+.box-in-hero .loki{
+    color: #5f5b53;
+    font-size: 1.4rem;
+    line-height: 1.86;
+}
+.box-in-hero .iron{
+    color: #171100;
+    font-weight: 600;
+    line-height: 1.67;
+    font-size: 1.8rem;
+
+}
+/* ============================================HERO RIGHT=================================================== */
+.hero .content_block{
+    width: 52%;
+    padding-left: 130px;
+    padding-top: 64px;
+}
+.hero .heading{
+    color: #171100;
+    font-family: Sen;
+    font-size: 5.8rem;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: -1.16px;
+}
+
+.hero .document{
+    margin-top: 22px;
+    color: #5f5b53;
+    font-size: 1.8rem;
+    line-height: 1.66;
+}
+.hero .cta-group{
+    margin-top: 38px ;
+    display: flex;
+}
+.hero .btn-cta{
+    background-color: #ffb900;
+    border-radius: 32px;
+    width: 180px;
+}
+.hero a.btn-cta{
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 600px;
+    line-height: 1.66;
+    text-align: center;
+    line-height: 64px;
+}
+.hero .watch-video{
+    margin-left: 28px;
+    border: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.hero .watch-video span{
+    font-size: 1.8rem;
+    font-weight: 600px;
+    color:#171100;
+    line-height: 1.66;
+    margin-left:14px ;
+}
+.hero .watch-video .icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.07);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero .document2{
+    margin-top: 48px;
+    color: #5f5b53;
+
+}
+.hero .document3{
+    margin-top: 8px;
+    
+}
+.hero .document3 strong{
+    color: #171100;
+    font-family: Sen;
+    font-size: 4.4rem;
+    font-weight: 700px;
+    line-height: 1.23;
+    margin-right: 15px;
+}
+.hero .document3 strong:nth-child(2){
+    margin-left: 28px;
+}
+
+/* ============================================POPULAR ====================================================== */
+/* ============================================POPULAR ====================================================== */
+/* ============================================POPULAR TOP ====================================================== */
+
+
+.popular-top{
+    display: flex;
+    margin-top: 189px;
+    justify-content: center;
+}
+
+.popular .popular-top .document{
+color: #5F5B53;
+font-size: 1.8rem;  
+line-height: 1.67; /* 166.667% */
+margin-top: 16px;
+width: 458px;
+margin-right: 614px;}
+.popular .popular-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #ffb900;
+    color: #ffb900;
+}
+.popular .popular-btn:nth-child(2)
+{
+    margin-left: 18px;
+}
+.popular .popular-box-right{
+    display: flex;
+}
+.popular-top .popular-btn:hover{
+    background: #ffb900;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* ===========================================POPULAR BOTTOM =============================================== */
+.popular .popular-bottom{
+    display: flex;
+    margin-top: 55px;
+    gap: 30px;
+}
+.popular .popular-bottom .course-list{
+border-radius: 12px;
+background: #FFF;
+box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);
+flex: 1;/* ba cot cao bang nhau */
+width: 370px;
+height: 466px;
+}
+
+/* buc anh tràng ra ngoài */
+.popular .popular-bottom .course-list .img{
+    width: 100%;
+    border-radius: 12px 12px 0px 0px;
+}
+/* BELOW IMG */
+.popular .popular-bottom .below-img{
+    display: flex;
+    justify-content:space-between;
+    height: 30px;
+}
+
+.popular .popular-bottom .icon-rank{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6px;
+}
+.popular .popular-bottom .icon{
+    width: 18px;
+    height: 18px;
+}
+.popular .popular-bottom .rank{
+    color: #FEA31B;
+    font-family: Poppins;
+    line-height: 1.75;
+}
+.popular .popular-bottom .information{
+    margin: 16px 22px 32px;
+
+}
+.popular .popular-bottom .document{
+    font-size: 1.4rem;
+    line-height: 1.86;
+}
+.popular .popular-bottom .buy-course{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+}
+.popular .popular-bottom .btn-2:hover{
+    background-color: #ffb900;
+    color: #FFF;
+    border: 0px;
+    cursor: pointer;
+    padding: 2px 0px;
+}
+/* ========================================================FEEDBACK===================================================== */
+/* ========================================================FEEDBACK===================================================== */
+
+.feedback{
+    margin-top: 200px;
+    background: #2E2100;
+    height: 380px;
+    
+}
+
+.feedback .in-feedback{
+    display: flex;
+    padding: 96px 0px;
+    justify-content: space-between;
+}
+.feedback .in-feedback .introduce{
+    width: 16%;
+}
+.feedback .in-feedback .review{
+    width: 66%;
+}
+.feedback .introduce .avatar{
+    object-fit: cover;
+    border-radius: 50%;
+}
+.feedback .introduce .name{
+    margin-top: 18px;
+    color: #F7F7F7;
+    font-family: Sen;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 34px; /* 141.667% */
+}
+.feedback .introduce .job{
+    margin-top: 4px;
+    color: #BFBCB2;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px; /* 185.714% */
+}
+
+.feedback .review .content{
+    color: #FFF;
+    font-size: 26px;
+    font-style: italic;
+    line-height: 40px; /* 153.846% */
+    margin-left: 30px;
+}
+.feedback .review .icon-review{
+    width: 30px;
+    height: 28px;
+}
+
+.feedback .introduce .dots{
+    display: flex;
+    gap: 6px;
+    margin-top: 26px;
+}
+.feedback .introduce .dot{
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    background-color: #634700;
+    cursor: pointer;
+}
+.feedback .introduce .dot2{
+    background-color: #ffb900;
+    cursor: default;
+}
+/* ========================================================FEATURE===================================================== */
+/* ========================================================FEATURE===================================================== */
+.features .in-feature{
+    display: flex;
+    /* margin: 200px auto 0px auto; */
+    margin-top: 200px;
+    align-items: center;
+    justify-content: space-between;
+}
+.features .in-feature .img-in-feature{
+    display: flex;
+    gap: 30px;
+}
+
+.features .in-feature .img-in-feature{
+    border-radius: 16px;
+}
+.features .in-feature .img-in-feature .second-img{
+    margin-bottom: 34px;
+}
+.features .in-feature .img-in-feature .first-img{
+    margin-top: 34px;
+}
+.features .in-feature .content
+{
+    width: 41%;
+}
+.features .content .spider{
+    margin-bottom: 16px;
+}
+
+.features  .in-feature .content .btn:hover{
+    background-color: #ffb900;
+    border: 1px solid #ffb900 ;
+    padding: 1px;
+}
+/* ========================================================BOTTOM FEATURE===================================================== */
+.features .bottom-in-feature{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+.features .bottom-in-feature .content{
+    width: 49%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.features .bottom-in-feature .content .document-2{
+    margin-top: 16px;
+    margin-bottom: 44px;
+}
+.features .bottom-in-feature .img-bottom-feature .img{
+    width: 470px;
+    height: 440px;
+}
+/* =====================================================================BLOG=============================================*/
+/* =====================================================================BLOG=============================================*/
+/* =====================================================================BLOG=============================================*/
+.blog{
+    background: #FFFCF4;
+}
+.blog .blog-header{
+    width: 38.2%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 96px;
+    margin-bottom: 55px;
+}.blog .document-2{
+    margin-top: 16px;
+}
+.blog .main_content{
+    display: flex;  
+    flex-direction: column;
+    
+}
+.blog .list-item{
+    display: flex;
+    gap: 30px;
+}
+.blog .img{
+    border-radius: 16px 16px 0px 0px;
+    width: 370px;
+    height: 250px;
+    object-fit: cover;
+}
+.blog .item{
+    background-color: #FFF;
+    border: 16px;
+}
+.blog .date{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.blog .item .dot{
+    background-color: #ffb900;
+    border-radius: 999px;
+    width: 6px;
+    height: 6px;
+    margin-right: 4px;
+    
+}
+.blog .line{
+    height: 1px;
+    background-color: #E2DFDA;
+    width: 160px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    border-right: 0.5px;
+}
+.blog .item .btn-2{
+    margin-bottom: 28px;
+    margin-top: 12px;
+}
+.blog .blog-dots{
+    display: flex;
+    gap: 6px;
+    margin-bottom: 96px;
+    margin-top: 38px;
+    justify-content: center;
+}
+.blog .blog-dots .dot{
+    width: 6px;
+    height: 6px;
+    background-color: #5F5B53;
+    border-radius: 50%;
+}
+.blog .blog-dots .dot:nth-child(2){
+    background-color: #ffb900;
+}
+.blog .content{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+/* =====================================================================FOOTER=============================================*/
+/* =====================================================================FOOTER=============================================*/
+/* =====================================================================FOOTER=============================================*/
+.footer{
+    background-color: #2E2100;
+
+}
+.footer .in-footer{
+    padding: 96px 0px 28px;
+}
+.footer .in-footer .document-3{
+    color: #BFBCB2;
+}
+.footer .in-footer .footer-top{
+    display: flex;
+    /* gap: 130px; */
+    justify-content: space-between;
+}
+.footer .in-footer .lesson{
+    /* margin-right: 10px; */
+    width: 22.8%;
+}
+.footer .lesson .icon{
+    margin-right: 18px;
+}
+.footer .in-footer .lesson .document-3{
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+
+.footer .in-footer .heading-h4{
+    color: #FFF;
+}
+.footer .in-footer .footer-top .line{
+    width: 130px;
+    height: 1px;
+    background: #59554B;
+    margin-top: 14px;
+    margin-bottom: 28px;
+}
+.footer .footer-top {
+    margin-bottom: 12px;
+}
+
+.footer .footer-bottom .line{
+    margin-top: 26px;
+    margin-bottom: 28px;
+    height: 1px;
+    background: #59554B;
+}
+.footer .footer-bottom .document-3{
+    text-align: center;
+}
+.footer .footer-top .address{
+    width: 23%;
+
+}
