@@ -187,7 +187,7 @@ padding: 36px 0 8px;
     padding-top: 56px;
     padding-bottom: 65px;
     background-color: #fffcf4;
-
+    width: 100%;
 }
 .hero .body{
     display: flex;
@@ -452,6 +452,7 @@ height: 466px;
     margin-top: 200px;
     background: #2E2100;
     height: 380px;
+    width: 100%;
     
 }
 
@@ -575,6 +576,7 @@ height: 466px;
 /* =====================================================================BLOG=============================================*/
 .blog{
     background: #FFFCF4;
+    width: 100%;
 }
 .blog .blog-header{
     width: 38.2%;
