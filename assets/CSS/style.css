@@ -552,6 +552,7 @@ height: 466px;
     background-color: #ffb900;
     border: 1px solid #ffb900 ;
     padding: 1px;
+    cursor: pointer;
 }
 /* ========================================================BOTTOM FEATURE===================================================== */
 .features .bottom-in-feature{
