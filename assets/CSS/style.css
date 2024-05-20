@@ -97,11 +97,13 @@ line-height: 1.67; /* 166.667% */
     background-color: #ffb900;
     border: 1px solid #ffb900 ;
     padding: 1px;
+    cursor: pointer;
 }
 .btn-2.btn-hover:hover{
     background-color: #ffb900;
     border: 1px solid #ffb900 ;
     padding: 1px;
+    cursor: pointer;
 }
 /* lam mo khi di chuot vo */
 .btn:hover{
@@ -709,5 +711,4 @@ height: 466px;
 }
 .footer .footer-top .address{
     width: 23%;
-
 }
